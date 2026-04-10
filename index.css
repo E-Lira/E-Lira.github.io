@@ -1,0 +1,195 @@
+body  {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.6;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5bbe42;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: #5bbe42;
+}
+
+/* ===== FOOTER ===== */
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+footer a{
+    text-align: center;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+}
+
+footer p{
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+    padding: 0px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== NAV ===== */
+
+nav a:hover{
+    color: #5bbe42;
+}
+
+/* ===== CONTATO ===== */
+
+.contato-info {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.contato-info p {
+    margin: 5px 0;
+}
+
+/* ===== CONTATO ===== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%; /* ocupa a largura da container */
+    padding: 0 10px; /* cria a bordinha lateral */
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: white;
+
+    box-sizing: border-box; /* ESSENCIAL */
+}
+
+button {
+    background-color: #5bbe42;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ===== CARDS (PROJETOS) ===== */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD INDIVIDUAL */
+.card {
+    background-color: #1a1a1a; /* mais visível */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* TÍTULO DO CARD */
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* TEXTO DO CARD */
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* EFEITO HOVER */
+.card:hover {
+    transform: scale(1.08);
+    border-color: #5bbe42;
+    box-shadow: 0 0 20px rgba(91, 190, 66, 0.6);
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav a {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #5bbe42;
+}
+
+.cards {
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
