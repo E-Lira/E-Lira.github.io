@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="project.html">Projetos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="center">
+            <img src="./img/foto_modelo_index.jpg" alt="Foto de perfil">
+        </div>
+        <h1>Contato</h1>
+        <h2>Sistema de acesso</h2>
+    </header>
+
+    <main>
+
+        <section id="authSection" class="auth-box">
+
+            <h2>Acesso</h2>
+
+            <div id="loginBox">
+                <h3>Login</h3>
+                <input type="text" id="loginUser" placeholder="Usuário">
+                <input type="password" id="loginPass" placeholder="Senha">
+                <button onclick="login()">Entrar</button>
+                <p onclick="toggleForms()" class="link">Criar conta</p>
+                <p id="loginMsg"></p>
+            </div>
+
+            <div id="registerBox" style="display:none;">
+                <h3>Cadastro</h3>
+                <input type="text" id="regUser" placeholder="Usuário">
+                <input type="password" id="regPass" placeholder="Senha">
+                <button onclick="register()">Cadastrar</button>
+                <p onclick="toggleForms()" class="link">Já tenho conta</p>
+                <p id="registerMsg"></p>
+            </div>
+
+        </section>
+
+        <section id="contactSection" style="display:none;">
+
+            <h2>Envie uma mensagem</h2>
+
+            <form id="contactForm">
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu email">
+                <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="feedback"></p>
+
+            <div class="logout-box">
+                <a href="#" onclick="logout()">Sair</a>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
